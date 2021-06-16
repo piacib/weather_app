@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+// Let's import React, our styles and React Async
+import React from 'react';
 import './App.css';
+import {WeatherTest} from './weatherTest.js'
+import {Search} from './Search.js'
 
+// Our App component
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div className="container">
+      <Search/>
+      <WeatherTest coordinates={{lat : 39.7456, lang : -97.0892}} />
+      </div>
+  )
 }
-
 export default App;
