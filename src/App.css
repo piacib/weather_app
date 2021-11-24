@@ -3,7 +3,7 @@
 html {
   height: 100%;
   position: relative;
-
+  font-size: 16px;
   background: linear-gradient(rgb(114,67,151),rgb(160,115,151)) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
